@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>こそだてDAYS｜ママ達の子育て体験談マンガ</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/13a61157c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/kd-fonticon/style.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/android-chrome.png" rel="icon" type="image/png">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Third Party Script -->
+    <script src="js/jquery.js"></script>
+    <script src="js/lazyload.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script async="async" src="//widgets.outbrain.com/outbrain.js"></script>
+
+    <script>
+        var is_auth = false;
+        var site_url = 'https://www.kosodatedays.com/';
+        var shareText = encodeURIComponent('「子どもの爪噛みに悩んだけど…」チッチママ｜こそだてDAYS ママ達のこそだて体験をマンガ化!\n');
+    </script>
+
+    <!-- Custom Script -->
+    <script src="js/constants.js"></script>
+    <script src="js/kd_window.js"></script>
+    <script src="js/dialog.js"></script>
+    <script src="js/share_btn.js"></script>
+    <script src="js/top_scroll_btn.js"></script>
+    <script src="js/side_menu.js"></script>
+    <script src="js/overlay_view.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/search_overlay_view.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/kd_tag.js"></script>
+    <script src="js/top.js"></script>
+</head>
+
+<body class="production" data-menu-status="close">
+    <!-- ヘッダー -->
+    <header id="header">
+        <!-- メニューアイコン -->
+        <div class="header-icon menu js-menu-icon">
+            <i class="fas fa-bars" title="メニュー"></i>
+            <div class="icon-label">メニュー</div>
+        </div>
+
+        <!-- 閉じるアイコン -->
+        <div class="header-icon close js-menu-close-icon">
+            <i class="fas fa-times" title="閉じる"></i>
+            <div class="icon-label">閉じる</div>
+        </div>
+
+        <!-- ロゴ画像 -->
+        <a href="#">
+            <img src="img/img_logo.svg" alt="" class="header-logo-center">
+            <img src="img/logo_header.svg" alt="" class="header-logo-side">
+        </a>
+
+        <div class="header-manga-info">
+            <div class="update-time">
+                <time>2022.11.10</time>
+                更新
+            </div>
+            <div>
+                こそだて体験談マンガ
+                <span class="manga-num">500</span>
+                本
+            </div>
+        </div>
+        <!--  検索アイコン  -->
+        <div class="header-icon search hover-translucent" data-overlay-open="search">
+            <i class="fas fa-search" title="検索"></i>
+            <div class="icon-label">検索</div>
+        </div>
+        <!--  ログインアイコン  -->
+        <a href="#" class="header-icon login hover-translucent">
+            <i class="fas fa-sign-in-alt" title="ログイン"></i>
+            <div class="icon-label">ログイン</div>
+        </a>
+    </header>
+    <!-- サイドメニュー -->
+    <nav id="responsive-side-menu" class="js-side-menu">
+        <ul class="menu-list js-menu-list">
+            <li title="妊活">
+                <a href="#">
+                    <img src="img/menu_icon_01.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">妊活</span>
+                </a>
+            </li>
+            <li title="妊娠">
+                <a href="#">
+                    <img src="img/menu_icon_02.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">妊娠</span>
+                </a>
+            </li>
+            <li title="出産">
+                <a href="#">
+                    <img src="img/menu_icon_03.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">出産</span>
+                </a>
+            </li>
+            <li title="子育て">
+                <a href="#">
+                    <img src="img/menu_icon_04.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">子育て</span>
+                </a>
+            </li>
+            <li title="お金・制度">
+                <a href="#">
+                    <img src="img/menu_icon_05.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">お金・制度</span>
+                </a>
+            </li>
+            <li title="子どもの健康">
+                <a href="#">
+                    <img src="img/menu_icon_06.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">子どもの健康</span>
+                </a>
+            </li>
+            <li title="ママの健康">
+                <a href="#">
+                    <img src="img/menu_icon_07.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">ママの健康</span>
+                </a>
+            </li>
+            <li class="special-feature">
+                <a href="#">
+                    <img src="img/nav-banner-2.png" alt="">
+                </a>
+            </li>
+            <li title="ランキング">
+                <a href="#">
+                    <img src="img/menu_icon_08.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">ランキング</span>
+                </a>
+            </li>
+            <li title="特集">
+                <a href="#">
+                    <img src="img/menu_icon_09.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">特集</span>
+                </a>
+            </li>
+            <li title="こそだて豆知識">
+                <a href="#">
+                    <img src="img/menu_icon_10.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">こそだて豆知識</span>
+                </a>
+            </li>
+            <li class="special-feature">
+                <a href="#">
+                    <img src="img/nav-banner.png" alt="nav banner">
+                </a>
+            </li>
+            <li title="こそだて体験談マンガ">
+                <a href="#">
+                    <img src="img/menu_icon_11.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">こそだて体験談マンガ</span>
+                </a>
+            </li>
+            <li title="こそだて用語マンガ">
+                <a href="#">
+                    <img src="img/menu_icon_12.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">こそだて用語マンガ</span>
+                </a>
+            </li>
+            <li title="妊娠・子育て用語辞典">
+                <a href="#">
+                    <img src="img/menu_icon_13.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">妊娠・子育て用語辞典</span>
+                </a>
+            </li>
+            <li title="体験談投稿">
+                <a href="#">
+                    <img src="img/menu_icon_14.png" alt="" class="side-menu-icon-mame">
+                    <span class="menu-label">体験談投稿</span>
+                </a>
+            </li>
+            <div class="social-icons-holder">
+                <a href="#" class="social-link">
+                    <img src="img/twitter_icon.png" alt="" class="social-icon">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="img/fb_icon.png" alt="" class="social-icon">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="img/ig_icon.png" alt="" class="social-icon">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="img/yt_icon.png" alt="" class="social-icon">
+                </a>
+            </div>
+        </ul>
+    </nav>
+    <!-- 右コンテンツ -->
+    <div class="right-contents js-right-contents jisho">
+        <!-- パンくずリスト -->
+        <div id="breadcrumbs">
+            <ol class="page-list">
+                <li class="item">
+                    <a href="#">こそだてDAYS</a>
+                </li>
+                <li class="item">
+                    <span class="current-page">妊娠</span>
+                </li>
+            </ol>
+        </div>
+        <!-- メインコンテンツ  -->
+        <script src="js/post_time.js"></script>
+        <main class="main-contents">
+
+            <div class="tabs-wrapper">
+                <ul class="tabs">
+                    <li class="active" rel="tab1">五十音順</li>
+                    <li rel="tab2">時期別</li>
+                </ul>
+            </div>
+
+            <div class="tab_container">
+                <h3 class="d_active tab_drawer_heading" rel="tab1">総合</h3>
+                <div id="tab1" class="tab_content">
+                    <article class="article-frame wrapper">
+                        <div class="result-title">妊娠・出産・子育てに関する用語一覧（五十音順）</div>
+                        <div class="lead">妊娠・出産・子育てに関する用語一覧（五十音順）</div>
+                        <ul class="hiragana-line">
+                            <li><a href="#">あ<span>行</span></a></li>
+                            <li><a href="#">か<span>行</span></a></li>
+                            <li><a href="#">さ<span>行</span></a></li>
+                            <li><a href="#">た<span>行</span></a></li>
+                            <li><a href="#">な<span>行</span></a></li>
+                            <li><a href="#">は<span>行</span></a></li>
+                            <li><a href="#">ま<span>行</span></a></li>
+                            <li><a href="#">や<span>行</span></a></li>
+                            <li><a href="#">ら<span>行</span></a></li>
+                            <li><a href="#">わ<span>行</span></a></li>
+                        </ul>
+                        <h2 class="line">あ行</h2>
+                        <div class="terms-result">
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-orange hover-translucent">子育て</a>
+                                    <a href="#" class="category cat-white hover-translucent">監修</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">赤ちゃん返り</a></h3>
+                                    <span class="term-name"><a href="#">あかちゃんがえり</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-orange hover-translucent">子育て</a>
+                                    <a href="#" class="category cat-white hover-translucent">監修</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">赤ちゃん返り</a></h3>
+                                    <span class="term-name"><a href="#">あかちゃんがえり</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-orange hover-translucent">子育て</a>
+                                    <a href="#" class="category cat-white hover-translucent">監修</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">赤ちゃん返り</a></h3>
+                                    <span class="term-name"><a href="#">あかちゃんがえり</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-orange hover-translucent">子育て</a>
+                                    <a href="#" class="category cat-white hover-translucent">監修</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">赤ちゃん返り</a></h3>
+                                    <span class="term-name"><a href="#">あかちゃんがえり</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-orange hover-translucent">子育て</a>
+                                    <a href="#" class="category cat-white hover-translucent">監修</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">赤ちゃん返り</a></h3>
+                                    <span class="term-name"><a href="#">あかちゃんがえり</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-orange hover-translucent">子育て</a>
+                                    <a href="#" class="category cat-white hover-translucent">監修</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">赤ちゃん返り</a></h3>
+                                    <span class="term-name"><a href="#">あかちゃんがえり</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-orange hover-translucent">子育て</a>
+                                    <a href="#" class="category cat-white hover-translucent">監修</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">赤ちゃん返り</a></h3>
+                                    <span class="term-name"><a href="#">あかちゃんがえり</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-area">
+                            <a href="#" class="button normal">マンガをもっとみる</a>
+                        </div>
+                    </article>
+                </div>
+
+                <h3 class="tab_drawer_heading" rel="tab2">体験談マンガ</h3>
+                <div id="tab2" class="tab_content">
+                    <article class="article-frame wrapper">
+                        <div class="result-title">妊娠・出産・子育てに関する用語一覧（五十音順）</div>
+                        <div class="lead">妊娠・出産・子育てに関する用語一覧（五十音順）</div>
+                        <ul class="hiragana-line">
+                            <li><a href="#">あ<span>行</span></a></li>
+                            <li><a href="#">か<span>行</span></a></li>
+                            <li><a href="#">さ<span>行</span></a></li>
+                            <li><a href="#">た<span>行</span></a></li>
+                            <li><a href="#">な<span>行</span></a></li>
+                            <li><a href="#">は<span>行</span></a></li>
+                            <li><a href="#">ま<span>行</span></a></li>
+                            <li><a href="#">や<span>行</span></a></li>
+                            <li><a href="#">ら<span>行</span></a></li>
+                            <li><a href="#">わ<span>行</span></a></li>
+                        </ul>
+                        <h2 class="line">あ行</h2>
+                        <div class="terms-result">
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-red hover-translucent">妊娠</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">遊び食べ</a></h3>
+                                    <span class="term-name"><a href="#">あそびたべ</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-red hover-translucent">妊娠</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">遊び食べ</a></h3>
+                                    <span class="term-name"><a href="#">あそびたべ</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-red hover-translucent">妊娠</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">遊び食べ</a></h3>
+                                    <span class="term-name"><a href="#">あそびたべ</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-red hover-translucent">妊娠</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">遊び食べ</a></h3>
+                                    <span class="term-name"><a href="#">あそびたべ</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-red hover-translucent">妊娠</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">遊び食べ</a></h3>
+                                    <span class="term-name"><a href="#">あそびたべ</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-red hover-translucent">妊娠</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">遊び食べ</a></h3>
+                                    <span class="term-name"><a href="#">あそびたべ</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-red hover-translucent">妊娠</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">遊び食べ</a></h3>
+                                    <span class="term-name"><a href="#">あそびたべ</a></span>
+                                </div>
+                            </div>
+                            <div class="term">
+                                <div class="category-area">
+                                    <a href="#" class="category cat-red hover-translucent">妊娠</a>
+                                </div>
+                                <div class="info-area">
+                                    <h3 class="title"><a href="#">遊び食べ</a></h3>
+                                    <span class="term-name"><a href="#">あそびたべ</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-area">
+                            <a href="#" class="button normal">マンガをもっとみる</a>
+                        </div>
+                    </article>
+                </div>
+
+            
+            </div>
+
+            <div id="ad">
+                <div class="ad_img"></div>
+            </div>
+        </main>
+        <!-- フッター -->
+        <footer id="footer" class="js-footer">
+            <!-- トップページリンク -->
+            <div class="top-page-link">
+                <a href="#">
+                    <i class="fas fa-home"></i>ホーム
+                </a>
+            </div>
+            <!-- サイトロゴ -->
+            <div class="site-logo">
+                <a href="#">
+                    <img src="img/footer_logo.png" alt="">
+                </a>
+            </div>
+            <!-- SNSアイコン -->
+            <div class="sns-icons">
+                <a href="#" class="item twitter hover-shadow">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="item facebook hover-shadow">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="item instagram hover-shadow">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="item youtube hover-shadow">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <!-- サイトマップ（SP） -->
+            <div class="site-map-1column">
+                <ul class="row">
+                    <li>
+                        <a href="#" class="story">体験談投稿</a>
+                    </li>
+                    <li>
+                        <a href="#" class="manga">体験談マンガ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="feature">特集</a>
+                    </li>
+                </ul>
+                <ul class="row">
+                    <li><a href="#" class="footer-link">こそだてDAYSとは</a></li>
+                    <li><a href="#" class="footer-link">利用規約</a></li>
+                    <li><a href="#" class="footer-link">プライバシー・ポリシー</a></li>
+                    <li><a href="#" class="footer-link">利用ガイドライン</a></li>
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">運営会社</a></li>
+                    <li><a href="#" class="footer-link">広告出稿・お取組み相談</a></li>
+                    <li><a href="#" class="footer-link">お問い合わせ</a></li>
+                </ul>
+                <div class="row">
+                    <a href="#" target="_blank">
+                        <img src="img/ad.gif" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- サイトマップ（PC / TABLET） -->
+            <div class="site-map-2column">
+                <!-- 左カラム -->
+                <div class="column-left">
+                    <div class="row">
+                        <div class="link-title">
+                            <a href="#" class="txt-green hover-underline">体験談募集</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="link-title">
+                            <a href="#" class="txt-orange hover-underline">体験談マンガ</a>
+                        </div>
+                        <ul class="link-list">
+                                <li>
+                                    <a href="#" class="hover-underline">ヒビユウ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">チッチママ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">まつざきしおり</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">こんぶ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">ぴよととなつき</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">グラハム子</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">ちひろ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">ユキミ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">まいこ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">shizu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">山本みつ湖</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">こしいみほ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">りんりんまま</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline">斎藤詠</a>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="link-title">
+                            <a href="#" class="txt-blue hover-underline">特集</a>
+                        </div>
+                        <ul class="link-list">
+                            <li>
+                                <a href="#" class="hover-underline">教えてLICOさん</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">しあわせ子育て対談</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">マンガ家インタビュー</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">離乳食特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">寝かしつけ特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">子どもの病気特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">可愛すぎる子どもたち♡特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">おとこの子特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">おんなの子特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">わくわく！保育園・幼稚園特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">働くママ特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">連休だ！お出かけ特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">子どもの日特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">母の日特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">おんなの子特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">わくわく！保育園・幼稚園特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">働くママ特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">連休だ！お出かけ特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">子どもの日特集</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">母の日特集</a>
+                            </li>
+                        </ul>    
+                    </div>
+                </div>
+                <!-- 右カラム -->
+                <div class="column-right">
+                    <ul class="link-list">
+                            <li>
+                                <a href="#" class="hover-underline">こそだてDAYSとは</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">利用規約</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">プライバシー・ポリシー</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">利用ガイドライン</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">運営会社</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">広告出稿・お取り組みのご相談</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-underline">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    <div class="banner">
+                        <a href="#" target="_blank">
+                            <img src="img/footer_banner.png" alt="子ども虐待防止「オレンジリボン運動」" width="234" height="60" border="0">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- コピーライト -->
+            <div class="copyright">
+                <copyright>©2017 EvolvedInfo. All Rights Reserved.</copyright>
+            </div>
+        </footer>
+    </div>
+    <!-- 検索オーバーレイビュー -->
+    <div class="overlay-view js-overlay-view" data-overlay-status="hide">
+        <div class="inner js-inner">
+            <!-- 閉じるボタン -->
+            <i class="fas fa-times close js-overlay-view-close" title="閉じる"></i>
+            <!-- コンテンツ -->
+            <div id="search-overlay-view" data-overlay-target="search" class="contents">
+                <div class="input-area">
+                    <!-- フリーワード検索 -->
+                    <div class="input-wrap js-input-wrap">
+                        <div class="freeword-input-box">
+                            <input type="text" placeholder="「育児用語」について気になるキーワード" maxlength="30" class="freeword-input js-freeword-input">
+                            <button class="freeword-reset js-freeword-reset"><i class="fas fa-times"></i></button>
+                        </div>
+                        <button class="freeword-submit js-freeword-submit"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="ranking-words">
+                        <a href="#">乳腺炎</a>
+                        <a href="#">出産育児一時金</a>
+                        <a href="#">立ち合い出産</a>
+                    </div>
+                </div>
+                <div class="select-area">
+                    <div id="search-for" class="tabs">
+                        <label class="tab">
+                            <input type="radio" name="search-for" class="tab-input" for="all" data-search-type="all-manga" checked>
+                            <div class="tab-box" for="all-manga">総合</div>
+                        </label>
+                        <label class="tab">
+                            <input type="radio" name="search-for" class="tab-input" for="experience-manga" data-search-type="experience-manga">
+                            <div class="tab-box" for="experience-manga">体験談マンガ</div>
+                        </label>
+                        <label class="tab">
+                            <input type="radio" name="search-for" class="tab-input" for="terminology-manga" data-search-type="terminology-manga">
+                            <div class="tab-box" for="terminology-manga">用語マンガ</div>
+                        </label>
+                    </div>
+                    <section class="section child-age" id="child-age">
+                        <!-- コンテンツ -->
+                        <div class="contents-area">
+                            <!-- タイトル -->
+                            <div class="title">対象年齢<span>から探す</span></div>
+                            <ul class="age-list">
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label">妊娠中</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                        <a href="#">
+                                        <p class="label"><span class="fs-20">0</span>歳</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                        <a href="#">
+                                        <p class="label"><span class="fs-20">1</span>歳</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                        <a href="#">
+                                        <p class="label"><span class="fs-20">2</span>歳</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label"><span class="fs-20">3</span>歳</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label"><span class="fs-20">4</span>歳</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label"><span class="fs-20">5</span>歳</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label"><span class="fs-20">6</span>歳</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="section genre-area" id="genre-area">
+                        <!-- コンテンツ -->
+                        <div class="contents-area">
+                            <!-- タイトル -->
+                            <div class="title">ジャンル<span>から探す</span></div>
+                            <ul class="genre-list">
+                                <li class="item">
+                                    <a href="#">
+                                        <img src="img/search-genre-icon-01.png" alt="search genre icon" class="image">
+                                        <p class="label">育児用語</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                    <img src="img/search-genre-icon-02.png" alt="search genre icon" class="image">
+                                    <p class="label">
+                                        マタニティ<br>
+                                        育児グッズ
+                                    </p>
+                                </a>
+                                <li class="item">
+                                    <a href="#">
+                                        <img src="img/search-genre-icon-03.png" alt="search genre icon" class="image">
+                                        <p class="label">育児ノウハウ</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <img src="img/search-genre-icon-04.png" alt="search genre icon" class="image">
+                                        <p class="label">発育発達</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <img src="img/search-genre-icon-05.png" alt="search genre icon" class="image">
+                                        <p class="label">制度</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <img src="img/search-genre-icon-06.png" alt="search genre icon" class="image">
+                                        <p class="label">予防接種</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <img src="img/search-genre-icon-07.png" alt="search genre icon" class="image">
+                                        <p class="label">妊娠用語</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <img src="img/search-genre-icon-08.png" alt="search genre icon" class="image">
+                                        <p class="label">行政情報</p>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <img src="img/search-genre-icon-09.png" alt="search genre icon" class="image">
+                                        <p class="label">病気・感染症</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="section hashtag-area" id="hashtag-area">
+                        <!-- コンテンツ -->
+                        <div class="contents-area">
+                            <!-- タイトル -->
+                            <div class="title">タグ<span>から探す</span></div>
+                            <ul class="hashtag-list">
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label">子育て</p>
+                                        <div class="count">35</div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label">育児ノウハウ</p>
+                                        <div class="count">35</div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label">1歳</p>
+                                        <div class="count">34</div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label">2歳</p>
+                                        <div class="count">32</div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label">3歳</p>
+                                        <div class="count">30</div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label">妊娠期</p>
+                                        <div class="count">25</div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label">妊娠用語</p>
+                                        <div class="count">23</div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label">離乳食</p>
+                                        <div class="count">20</div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">
+                                        <p class="label">妊娠検査薬</p>
+                                        <div class="count">15</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="button-area">
+                            <a href="#" class="button normal">タグをもっとみる</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- カスタムダイアログ -->
+    <div id="dialog" class="modal">
+        <div id="dialog-inner">
+            <div id="dialog-inner-2">
+                <div id="dialog-message"></div>
+                <div id="dialog-btn">
+                    <button id="dialog-btn-ok" class="simple-btn">OK</button>
+                    <button id="dialog-btn-cancel" class="simple-btn">キャンセル</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--管理画面プレビューのヘッダー表示-->
+    <!-- シェアボタン(開閉式) -->
+    <div id="share-btn-open-close" class="js-share-btn-open-close">
+        <label for="share-btn-open-close-checkbox" class="label hover-translucent js-share-btn-open-close-label">
+            <i class="fas fa-share icon"></i>
+            <span class="text">シェア</span>
+        </label>
+        <input type="checkbox" id="share-btn-open-close-checkbox">
+        <ul>
+            <li class="twitter hover-translucent">
+                <img src="img/twitter-icon.png" alt="Twitterアイコン">
+            </li>
+            <li class="facebook hover-translucent">
+                <img src="img/facebook-icon.png" alt="Facebookアイコン">
+            </li>
+            <li class="line hover-translucent">
+                <img src="img/line-icon.png" alt="Lineアイコン">
+            </li>
+        </ul>
+    </div>
+    <!-- トップへスクロールするボタン -->
+    <div id="top-scroll-btn" class="hover-translucent js-top-scroll-btn">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+
+    <!-- Custom Script -->
+    <script>
+        $(".tab_content").hide();
+        $(".tab_content:first").show();
+
+        /* if in tab mode */
+        $("ul.tabs li").click(function () {
+
+            $(".tab_content").hide();
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn();
+
+            $("ul.tabs li").removeClass("active");
+            $(this).addClass("active");
+
+            $(".tab_drawer_heading").removeClass("d_active");
+            $(".tab_drawer_heading[rel^='" + activeTab + "']").addClass("d_active");
+
+        });
+        /* if in drawer mode */
+        $(".tab_drawer_heading").click(function () {
+
+            $(".tab_content").hide();
+            var d_activeTab = $(this).attr("rel");
+            $("#" + d_activeTab).fadeIn();
+
+            $(".tab_drawer_heading").removeClass("d_active");
+            $(this).addClass("d_active");
+
+            $("ul.tabs li").removeClass("active");
+            $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
+        });
+
+
+        /* Extra class "tab_last" 
+           to add border to right side
+           of last tab */
+        $('ul.tabs li').last().addClass("tab_last");
+    </script>
+    <script>
+        // Table Contents
+        $('.table-contents input').on('change',function(){
+            $('.table-contents .heading i').toggleClass('fa-minus');
+            $('.table-contents .heading i').toggleClass('fa-plus');
+            $('.table-contents .contents').toggleClass('expand')
+        })
+        $(function () {
+            $(".see-more-manga").slice(0, 4).show();
+            $("body").on('click touchstart', '.see-more', function (e) {
+                $(".see-more-manga:hidden").slice(0, 4).fadeIn(2000);
+                if ($(".see-more-manga:hidden").length == 0) {
+                    $(".see-more").css('visibility', 'hidden');
+                    $(".full-manga").toggleClass('end');
+                }
+            });
+        });
+    </script>
+    <script>
+        // See more manga swiper
+        var more_manga_swiper = new Swiper('#more-manga-swiper', {
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            loop: true,
+            spaceBetween: 20,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+            navigation: {
+                nextEl: ".js-more-manga-swiper-next",
+                prevEl: ".js-more-manga-swiper-prev"
+            }
+        });
+        // Recommendation swiper
+        var recommend_swiper = new Swiper('#recommend-swiper', {
+            spaceBetween: 20,
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true
+            },
+                    loop: true
+        });
+    </script>
+</body>
+
+</html>

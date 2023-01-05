@@ -1,0 +1,141 @@
+/**
+ * コンテンツにタグを設定する
+ * @type {KdTag}
+ * @param {object} params
+ * @example
+ * new KdTag({
+ *   template: '<a href="{{url}}">{{tagName}}</a>'
+ * });
+ *
+ * data-kd-tag="<category>:<id>" // 表示領域につける
+ */
+var KdTag = function (params) {
+    'use strict';
+
+    var self = this;
+
+    var props = {
+        sep: ':',
+        targetAttr: 'data-kd-tag',
+        template: '<a href="{{url}}">{{tagName}}</a>'
+    };
+
+    var targets = [
+        {
+            elm: {},
+            category: '',
+            id: 0,
+            tags: []
+        }
+    ];
+
+    var URL_TEMPLATE = '{{url}}';
+    var TAG_NAME_TEMPLATE = '{{tagName}}';
+
+    var CATEGORY_MANGA = 'manga';
+    var CATEGORY_FEATURE = 'feature';
+    var CATEGORY_BEAN_KNOWLEDGE = 'bean_knowledge';
+
+    var GET_TAG_URL = 'tags/get_tag_api';
+
+    /**
+     * @constructor
+     */
+    (function _construct() {
+        overrideProps();
+        targets.length = 0;
+        getTarget();
+        getTag();
+    })();
+
+    /**
+     * プロパティを上書きする
+     */
+    function overrideProps() {
+        Object.keys(params).forEach(function (key) {
+            props[key] = params[key];
+        });
+    }
+
+    /**
+     * 対象要素を取得する
+     */
+    function getTarget() {
+        $('[' + props.targetAttr + ']').each(function (_, elm) {
+            var attr = $(elm).attr(props.targetAttr);
+            var attrAry = attr.split(props.sep);
+
+            if (attrAry.length !== 2) {
+                return;
+            }
+
+            var category = attrAry[0];
+            if (category !== CATEGORY_MANGA && category !== CATEGORY_FEATURE && category !== CATEGORY_BEAN_KNOWLEDGE) {
+                console.error('カテゴリが不正です。');
+                return;
+            }
+
+            targets.push({
+                elm: elm,
+                category: category,
+                id: attrAry[1]
+            });
+        });
+    }
+
+    /**
+     * タグを取得する
+     */
+    function getTag() {
+        $.each(targets, function (_, target) {
+            // 一旦特集は取得しない
+            if (target.category === CATEGORY_FEATURE) {
+                return;
+            }
+
+            $.ajax({
+                type: 'POST',
+                url: GET_TAG_URL,
+                data: {
+                    category: target.category,
+                    id: target.id
+                },
+                success: function (res) {
+                    if (!res) {
+                        return;
+                    }
+
+                    target.tags = res;
+
+                    // タグをセット
+                    setTag(target);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    console.error(XMLHttpRequest);
+                }
+            });
+        });
+    }
+
+    /**
+     * タグをセットする
+     * @param {object} target
+     */
+    function setTag(target) {
+        // リセット
+        $(target.elm).empty();
+
+        // 設定
+        $.each(target.tags, function (_, tag) {
+            if (typeof tag !== 'object') {
+                return;
+            }
+
+            var tagTemplate = props.template;
+            tagTemplate = tagTemplate
+                .replace(URL_TEMPLATE, tag.url)
+                .replace(TAG_NAME_TEMPLATE, tag.tagName);
+            $(target.elm).append(tagTemplate);
+        });
+    }
+};

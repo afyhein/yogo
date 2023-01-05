@@ -1,0 +1,65 @@
+<style>
+    body * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    .tabs {
+      --bar-color: red;
+      --background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #e0e0e0);
+
+      display: flex;
+      width: 600px;
+      border: 1px solid #ddd;
+    }
+
+    .tabs > .tab {
+      flex: 1;
+      display: flex;
+    }
+
+    .tab > .tab-input {
+      width: 0;
+      height: 0;
+      margin: 0;
+      display: none;
+    }
+
+    .tab > .tab-box {
+        background-color: yellow;
+        border: 1px solid black;
+      padding: .5rem;
+      width: 100%;
+      text-align: center;
+      transition: 0.5s;
+      border-bottom: 2px solid rgba(0,0,0,0);
+    }
+
+    .tab > .tab-input:checked + .tab-box {
+      background: var(--background);
+      border-color: var(--bar-color);
+    }
+
+</style>
+
+<div id="container">
+    <div class="tabs">
+      <label class="tab">
+        <input type="radio" name="tab-input" class="tab-input">
+        <div class="tab-box">Option 1</div>
+      </label>
+      <label class="tab">
+        <input type="radio" name="tab-input" class="tab-input">
+        <div class="tab-box">Option 2</div>
+      </label>
+      <label class="tab">
+        <input type="radio" name="tab-input" class="tab-input">
+        <div class="tab-box">Option 3</div>
+      </label>
+      <label class="tab">
+        <input type="radio" name="tab-input" class="tab-input">
+        <div class="tab-box">Option 4</div>
+      </label>
+    </div>
+  </div>
+  
